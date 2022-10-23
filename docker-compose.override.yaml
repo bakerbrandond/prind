@@ -8,12 +8,12 @@ x-ustreamer-svc: &ustreamer-svc
 services:
   klipper:
     devices:
-      - /dev/ttymxc3:/dev/ttymxc3
+      - /dev/serial/by-id/usb-UltiMachine__ultimachine.com__RAMBo_7403431393835160A1B1-if00:/dev/ttymxc3
 
   webcam:
     <<: *ustreamer-svc
     devices:
-      - /dev/video0:/dev/webcam
+      - /dev/null:/dev/webcam
     labels:
       - "traefik.enable=true"
       - "traefik.http.services.webcam.loadbalancer.server.port=8080"

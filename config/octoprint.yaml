@@ -1,10 +1,60 @@
+accessControl:
+  userfile: /octoprint/octoprint/users.yaml
+api:
+  key: 1C0B8059131843FC9807C08AABC8F679
+plugins:
+  announcements:
+    _config_version: 1
+    channels:
+      _blog:
+        read_until: 1664977500
+      _important:
+        read_until: 1521111600
+      _octopi:
+        read_until: 1659616200
+      _plugins:
+        read_until: 1664427600
+      _releases:
+        read_until: 1666085100
+  discovery:
+    upnpUuid: ec0f21f2-0391-4c4c-ba82-6cdba600ced2
+  errortracking:
+    unique_id: c98674c2-405b-4376-a8c4-850d2d1fcb2e
+  gcodeviewer:
+    _config_version: 1
+  softwareupdate:
+    _config_version: 9
+  tracking:
+    enabled: true
+    unique_id: a787b1b9-f790-41b9-a177-c6ae2f46bb3e
+  virtual_printer:
+    _config_version: 1
 serial:
   additionalPorts:
   - /opt/printer_data/run/klipper.tty
   autoconnect: true
   port: /opt/printer_data/run/klipper.tty
+server:
+  firstRun: false
+  onlineCheck:
+    enabled: true
+  pluginBlacklist:
+    enabled: true
+  secretKey: tiq1V7KkD1LMNanweamdhKnuaQsg8iTo
+  seenWizards:
+    backup: null
+    corewizard: 4
+    tracking: null
+temperature:
+  profiles:
+  - bed: 100
+    chamber: null
+    extruder: 210
+    name: ABS
+  - bed: 60
+    chamber: null
+    extruder: 180
+    name: PLA
 webcam:
   snapshot: http://webcam:8080/snapshot
   stream: /webcam/stream
-accessControl:
-  userfile: /octoprint/octoprint/users.yaml

@@ -8,7 +8,7 @@ x-ustreamer-svc: &ustreamer-svc
 services:
   klipper:
     devices:
-      - /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0:/dev/serial/by-id/usb-1a86_USB_Serial-if00-port0
+      - /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0:/dev/ttyUSB0
 
   webcam:
     <<: *ustreamer-svc

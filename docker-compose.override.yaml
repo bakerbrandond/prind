@@ -13,7 +13,7 @@ services:
   webcam:
     <<: *ustreamer-svc
     devices:
-      - /dev/null:/dev/webcam
+      - /dev/video0:/dev/webcam
     labels:
       - "traefik.enable=true"
       - "traefik.http.services.webcam.loadbalancer.server.port=8080"
